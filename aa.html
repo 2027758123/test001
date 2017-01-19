@@ -16,8 +16,7 @@
 </body>
 </html>
 <script type="text/javascript">
-	window.onload = function (){
-		document.getElementById('btn1').onclick = function (){
+	window.onload = function (){document.getElementById('btn1').onclick = function (){
 			var content = document.getElementById('content').value;
 			var reg = /\d\d\d/gi;
 			var result = reg.test(content);
@@ -51,6 +50,7 @@
 			var result = content.replace(reg,'刘苗');
 			console.log(result);
 		}
+		
 		document.getElementById('btn6').onclick = function (){
 			var content = document.getElementById('content').value;
 			var reg = /\d\d\d/gi;
